@@ -64,6 +64,12 @@ footer{
   bottom: 0;
 }
 
+@media screen and (prefers-reduced-motion: reduce) {
+  #logo {
+    animation: none;
+  }
+}
+
 @media screen and (min-width: 850px){
 #navbar {
   list-style-type: none;
@@ -90,10 +96,5 @@ footer{
     bottom: 0;
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-  #logo {
-    animation: none;
-  }
-}
 }
 
