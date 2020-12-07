@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>Summer Olympics</title>
+<link rel="stylesheet" type="text/css" href="css/style2.css">
+
+</head>
+<header>
+  <div id="navbar">
+    <a href="index.html"> Home </a>
+    <a href="history.html"> History </a>
+    <a class = "active" href="summer.html"> Summer Olympics </a>
+    <a href="winter.html"> Winter Olympics </a>
+    <a href="statistics.html"> Statistics </a>
+  </div>
+</header>
+<body>
+  <a class = "skip" href="#skip">Skip to Main Content</a>
+<main>
+  <h1>The Olympic Games</h1>
+  <h2>The Summer Olympics</h2>
+  <p> With 48 unique competitions, the Summer Olympics consists of athletic feats 
+    held in the water and on land.
+  </p>
+  <div style="text-align:center"> 
+    <button onclick="playPause()">Play/Pause</button> 
+    <br><br>
+    <video id="video1" width="420">
+      <source src="summer.mp4" type="video/mp4">
+    </video>
+  </div> 
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <script> 
+    var myVideo = document.getElementById("video1"); 
+    
+    function playPause() { 
+      if (myVideo.paused) 
+        myVideo.play(); 
+      else 
+        myVideo.pause(); 
+    }  
+
+    var mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+  <div class = "container">
+    <a href='#archery'> Archery</a>
+    <a href='#artisticswimming'>Artistic<br> Swimming</a>
+    <a href="#athletics">Athletics</a>
+    <a href="#badminton">Badminton</a>
+    <a href="#baseball"> Baseball <br>and Softball</a>
+    <a href="#basketball">Basketball</a>
+    <a href="#beach">Beach <br>Volleyball</a>
+    <a href="#boxing">Boxing</a>
+    <a href="#slalom">Canoe <br>Slalom</a>
+    <a href="#sprint">Canoe <br>Sprint</a>
+    <a href="#bmx">Cycling</a>
+    <a href="#diving">Diving</a>
+    <a href="#equestrian">Equestrian</a>
+    <a href="#fencing">Fencing</a>
+    <a href="#football">Football</a>
+    <a href="#golf">Golf</a>
+    <a href="#gym">Gymnastics</a>
+    <a href="#handball"> Handball</a>
+    <a href="#hockey">Hockey</a>
+    <a href="#judo">Judo</a>
+    <a href="#karate">Karate</a>
+    <a href="#pentathalon">Modern <br> Pentathalon</a>
+    <a href="#rowing">Rowing</a>
+    <a href="#sailing">Sailing</a>
+    <a href="#shooting">Shooting</a>
+    <a href="#swimming">Swimming</a>
+    <a href="#table">Table <br> Tennis</a>
+    <a href="#taekwondo">Taekwondo</a>
+    <a href="#tennis">Tennis</a>
+    <a href="#tramp">Trampoline</a>
+    <a href="#triathlon">Triathlon</a>
+    <a href="#volley">Volleyball</a>
+    <a href="#polo">Water <br> Polo</a>
+    <a href="#weight">Weightlifting</a>
+  </div>
+  <div class="content">
+  <div id='archery'>
+    <h3>Archery</h3>
+    <img src="images/archery.jpg" alt="archery" id = "photos">
+    <p>Archery first appeared in the Olympic games in 1900. Athletes use Recurve bows with a draw weight 
+      of around 50 pounds. Archery has been contested in 16 Olympiads, with a total of 84 nations competing.
+    </p>
+  </div>
+  <div id='artisticswimming'>
+    <h3>Artistic Swimming</h3>
+    <img src="images/artistic.jpg" alt="artisticswimming" id = "photos">
+    <p>Artistic swimming is a women's Olympic sport which combines technical perfection, synchronisation and choreography.
+      It was first introduced into the Games in 1984 and currently consists of duet and team events.
+    </p>
+  </div>
+  <div id='athletics'>
+    <h3>Athletics</h3>
+    <img src="images/track.jpg" alt="athletics" id = "photos">
+    <p> Athletics consists of many track and field events including running, jumping and throwing.
+      The athletics track is 400m in length and has been contested at every Summer Olympics since the birth
+      of the modern Olympics.
+    </p>
+  </div>
+    <div id='badminton'>
+      <h3>Badminton</h3>
+      <img src="images/badminton.jpg" alt="badminton" id = "photos">
+      <p>Badminton was first held as a demonstration sport at the 1972 Summer Olympics and since 1992, men's 
+        and women's singles and doubles have been held at every Summer Olympics. 
+      </p>
+    </div>
+    <div id='baseball'>
+      <h3>Baseball and Softball</h3>
+      <img src="images/baseball.jpg" alt="baseball" id = "photos">
+      <p>Baseball and softball are planning to be included in the next Summer Olympics after being exluded from the Games
+        in 2012. Both of these sports are incredibly popular among many nations.
+      </p>
+    </div>
+    <div id='basketball'>
+      <h3>Basketball</h3>
+      <img src="images/basketball.jpg" alt="basketball" id = "photos">
+      <p>Basketball has been included in the Summer Olympics as a men's sport since 1936 while
+        women's basketball joined in 1976. The USA National team is dominant for both men and women.
+      </p>
+    </div>
+    <div id='beach'>
+      <h3>Beach Volleyball</h3>
+      <img src="images/beach.jpg" alt="beach volleyball" id = "photos">
+      <p>Beach Volleyball was introduced into the Games in 1992 as a demonstration and has been 
+        an official competition since 1996. This event features two 24-team tournmanets, one for mean and one for women.
+      </p>
+    </div>
+    <div id='boxing'>
+      <h3>Boxing</h3>
+      <img src="images/boxing.jpg" alt="boxing" id = "photos">
+      <p>Boxing has been contested at every Summer Olympic Games since 1904, except for the 
+        1904 Summer Olympics in Stockholm because the sport was banned by Swedish law at the time. The 2008 Summer 
+      Olympics were the final games with boxing as a male only event.    </p>
+    </div>
+    <div id='slalom'>
+      <h3>Canoe Slalom</h3>
+      <img src="images/slalom.png" alt="canoe slalom" id = "photos">
+      <p>Canoe Slalom was introduced into the games in 1972 at the Summer Olympics in Munich.
+        Athletes use slalom watercrafts to manuever through a course of hanging downstream or upstream gates as fast as they can.
+      </p>
+    </div>
+    <div id='sprint'>
+      <h3>Canoe Sprint</h3>
+      <img src="images/sprint.jpg" alt="sprint" id = "photos">
+      <p> Canoe sprint, originally known as "flat water racing", was introduced into the games in 1936 as a 
+        men's competition with the women's event entering in 1948. The event consists of a speed race to an end line of a flat water course.
+      </p>
+    </div>
+    <div id='bmx'>
+      <h3>Cycling</h3>
+      <img src="images/bmx.jpg" alt="cycling" id = "photos">
+      <p> Cylcing in the Summer games consists of multiple different events such as BMX, mountain biking, track cycling 
+        and road cycling. Within these there are team sprints, match sprints and many others for both men and women. Cycling combines skills 
+        in technicality, strength and speed.
+      </p>
+    </div>
+    <div id='diving'>
+      <h3>Diving</h3>
+      <img src="images/dive.jpg" alt="diving" id = "photos">
+      <p> Diving is 1 of 4 water sports at the Olympic and is comprised of both men and women's 3m springboard,
+        synchronised 3m springboard, 10m platform and synchronised 10m platform. This competition features up to 136 athletes.
+      </p>
+    </div>
+    <div id='equestrian'>
+      <h3>Equestrian</h3>
+      <img src="images/eq.jpg" alt="Equestrian" id = "photos">
+      <p> Equestian disciplines at the Summer Games are Dressage, Eventing and Jumping. In each event both individual and team medals are awarded 
+        where women and men compete together. Britain is the only nation that has won at least on Gold Medal in every equestrian event.
+      </p>
+    </div>
+    <div id='fencing'>
+      <h3>Fencing</h3>
+      <img src="images/fencing.jpg" alt="fencing" id = "photos">
+      <p> Olympic fencing was first included at the 1896 Games in Athens based on traditional skills of swordsmanship. Men and women compete in individual and team events 
+        where three types of weapon are used: foil, eppe and sabre. 
+      </p>
+    </div>
+    <div id='football'>
+      <h3>Football</h3>
+      <img src="images/football.jpg" alt="football" id = "photos">
+      <p> Football, commonly known as soccer in the United States, is an extremely popular and competetive sport in the Summer Olympic Games. 
+        Men's football has been included since the first Games with women's football joining in the 1996 Atlanta Games. Teams must be associated with Fifa to play.
+      </p>
+    </div>
+    <div id='golf'>
+      <h3>Golf</h3>
+      <img src="images/golf.jpg" alt="golf" id = "photos">
+      <p> Olympic Golf is based off of the qualification of earlier competitions leading to the Official World Golf Ranking where 
+        the top 15 within each gender qualify automatically. However, a total of 60 players will qualify where each country has a limit of 4 golfers.
+      </p>
+    </div>
+    <div id='gym'>
+      <h3>Gymnastics</h3>
+      <img src="images/gym.jpg" alt="gymnastics" id = "photos">
+      <p> Gymnastics is an exciting Olympic sport consisting of multiple different events for men and women. Men's gymnastics includes 
+        floor, pommel horse, rings, vault, parallel bars and high/horizontal bar. Women's gymnastics includes vault, uneven bars, beam and floor. There 
+        are both individual and team titles.
+      </p>
+    </div>
+    <div id='handball'>
+      <h3>Handball</h3>
+      <img src="images/handball.jpg" alt="handball" id = "photos">
+      <p> Handball was introduced into the Games in 1972 and follows unique rules: a match consists of two 30 minute periods, 
+        each team has 7 players including a goalie, outfield players can tough the ball with any part of their body above the knee, 
+        if a player holds possession they can driblle or take three steps and only the goalkeeper is allowed to enter the goal area.
+      </p>
+    </div>
+    <div id='hockey'>
+      <h3>Ice Hockey</h3>
+      <img src="images/hockey.jpg" alt="hockey" id = "photos">
+      <p> Ice hockey is unique as it is hold at both Summer and Winter Olympics. It was introduced for men in 1920 while women's ice hockey was added 
+        in 1992. The game is played in a tournament style with one nation as winner.
+      </p>
+    </div>
+    <div id='judo'>
+      <h3>Judo</h3>
+      <img src="images/judo.jpg" alt="judo" id = "photos">
+      <p> Judo is a traditional Japanese wrestling sport introduced into the Summer Olympics in 1964 and has evolved since into a modern martial art. The top 18 athletes in each division qualify however 
+        each NOC is subjected to a limit of 1 judoka per division.
+      </p>
+    </div>
+    <div id='karate'>
+      <h3>Karate</h3>
+      <img src="images/karate.jpg" alt="karate" id = "photos">
+      <p> Karate was recently introduced into the Summer Olympics and was planning to makes its debut at the 2020 Games. It 
+        was planning to feature two types of events, Kumite and Kata. The event consists of 60 competitors for the Kumite competition and 
+        20 for the Kata competition.  
+      </p>
+    </div>
+    <div id='pentathlon'>
+      <h3>Modern Pentathlon</h3>
+      <img src="images/pent.jpg" alt="pentathlon" id = "photos">
+      <p> The modern pentathlon consists of 5 different events all in one competition; fencing, freestlye swimming, equestrian 
+        show jumping, pistol shooting and cross country running. The complex and dynamic event was introduced to the Games by Baron 
+        de Courbertin in 1912.  
+      </p>
+    </div>
+    <div id='rowing'>
+      <h3>Rowing</h3>
+      <img src="images/rowing.jpg" alt="rowing" id = "photos">
+      <p> Rowing is a competition with many events such as doubles and quads in sculling to pairs, fours and eights in sweep with eights 
+        being the biggest boat. These boats can travel at a speed at almost 18mph with hopes of acheiving gold by crossing the finish line first. 
+      </p>
+    </div>
+    <div id='sailing'>
+      <h3>Sailing</h3>
+      <img src="images/sailing.jpg" alt="sailing" id = "photos">
+      <p> Olympic sailing has been a part of the Games since 1896 as a competetive regatta. Races are sailed in a fleet racing format 
+        where fleets of equally-matched boats race around a course. This is a female and male sport that takes place on the water.
+      </p>
+    </div>
+    <div id='shooting'>
+      <h3>Shooting</h3>
+      <img src="images/shooting.jpg" alt="shooting" id = "photos">
+      <p> Shooting has been included at every Summer games since the birth of the modern Olympics in 1896. This event is divided into three different 
+        sects: rifle, pistol and shotgun, with 15 events total. Competitors shoot at clay targets from various distances and angles to try for the most accurate shot.
+      </p>
+    </div>
+    <div id='swimming'>
+      <h3>Swimming</h3>
+      <img src="images/swimming.jpg" alt="swimming" id = "photos">
+      <p> Swimming is a very popular Summer Olympic sport with 16 events for men and for women. The competitions involve four different strokes; freestyle, butterfly,
+        backstroke and breaststroke. Athletes will use these stokes to compete in various distances and often will compete in multiple events, both individual and relay.
+      </p>
+    </div>
+    <div id='table'>
+      <h3>Table Tennis</h3>
+      <img src="images/table.jpg" alt="table tennis" id = "photos">
+      <p> Table tennis includes single and team tournament style competitions for both male and female athletes. This sport was introduced into the Games in 1988 and has
+        been dominated by China.   
+      </p>
+    </div>
+    <div id='taekwondo'>
+      <h3>Taekwondo</h3>
+      <img src="images/taekwondo.jpg" alt="taekwondo" id = "photos">
+      <p> Taekwondo is one of two Asian martial arts included in the Olympic Games and made its official debut in 2000. This event 
+        is a full contact sport and is the most popular martial art in the world. 
+      </p>
+    </div>
+    <div id='tennis'>
+      <h3>Tennis</h3>
+      <img src="images/tennis.jpg" alt="tennis" id = "photos">
+      <p> Tennis has a long Olympic history starting in 1896 but unfortunately was removed in 1924 and did not reutn until 
+        the 1988 Games. Professionals are welcomed to compete and qualify based on world rankings from previous
+        global tournaments. 
+      </p>
+    </div>
+    <div id='tramp'>
+      <h3>Trampoline</h3>
+      <img src="images/tramp.jpg" alt="trampoline" id = "photos">
+      <p> Trampolining made its debut in 2000 and has remained a mens and womens sport ever since. 10x17ft trampolines 
+        are used in the competition. Athletes perform routines and have to follow rules such as starting and ending on their feet, 
+        the trampoline must stop completely at the end and moves must be performed in one of the following shapes: tucked, piked or straight.
+      </p>
+    </div>
+    <div id='triathlon'>
+      <h3>Triathlon</h3>
+      <img src="images/tri.jpg" alt="triathlon" id = "photos">
+      <p> Triathlon was invented in the early 1970s in San Diego and was introduced into the Games in 2000. Events consist of 
+        a 1,500 meter swim, 40 km bike and 10 km run for both men and women. The race is to be completed without any breaks from start to finish.     
+      </p>
+    </div>
+    <div id='volley'>
+      <h3>Volleyball</h3>
+      <img src="images/volley.jpg" alt="volleyball" id = "photos">
+      <p> Volleyball is an indoor sport that has been part of the Games since 1964. This event is played under the rally 
+        system of scoring where the first team to get to 25 points with a lead of at least 2 points wins the set. This is a competition for both males and females. 
+      </p>
+    </div>
+    <div id='polo'>
+      <h3>Water Polo</h3>
+      <img src="images/polo.jpg" alt="water polo" id = "photos">
+      <p> Water polo has been included in the Olympic Games since 1900, however women's water polo was only recently introduced in 2000. Water polo 
+        essentially consists of a game of violent handball in the water. It has been ranked the toughest sport in the entire world. 
+      </p>
+    </div>
+    <div id='weight'>
+      <h3>Weightlifting</h3>
+      <img src="images/weight.jpg" alt="weightlifting" id = "photos">
+      <p> Olympic weightlifting includes three type of lifting movements such as snatch and clean and jerk. Athletes win as a result 
+        of their total combined lifts. Since 2000, men compete in eight weight categories and women compete in seven. 
+      </p>
+    </div>
+  </div>
+</div>
+</main>
+
+
+<footer>
+  <p>Olympic Games<br/>
+    AN INTERNATIONAL COMPETITION OF THE WORLDS MOST ELITE ATHLETES.</p>
+</footer>
+</body>
+</html>
+ 

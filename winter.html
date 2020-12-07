@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title>Winter Olympics</title>
+<link rel="stylesheet" type="text/css" href="css/style3.css">
+
+</head>
+<header>
+  <div id="navbar">
+    <a href="index.html"> Home </a>
+    <a href="history.html"> History </a>
+    <a href="summer.html"> Summer Olympics </a>
+    <a class = "active" href="winter.html"> Winter Olympics </a>
+    <a href="statistics.html"> Statistics </a>
+  </div>
+</header>
+<body>
+  <a class = "skip" href="#skip">Skip to Main Content</a>
+<main>
+  <h1>The Olympic Games</h1>
+  <h2>The Winter Olympics</h2>
+  <p> With 16 unique competitions, the Winter Olympics consist of athletic feats taking advantage of the winter weather.
+  </p>
+  <div style="text-align:center"> 
+    <button onclick="playPause()">Play/Pause</button> 
+    <br><br>
+    <video id="video1" width="420">
+      <source src="winter.mp4" type="video/mp4">
+    </video>
+  </div> 
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <script> 
+    var myVideo = document.getElementById("video1"); 
+    
+    function playPause() { 
+      if (myVideo.paused) 
+        myVideo.play(); 
+      else 
+        myVideo.pause(); 
+    }  
+    var mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+}
+    </script>
+  <div class = "container">
+  <a href='#alpine'> Alpine Skiing</a>
+    <a href='#biathlon'>Biathlon</a>
+    <a href="#bobsleigh">Bobsleigh</a>
+    <a href="#cross">Cross Country <br> Skiing</a>
+    <a href="#curling"> Curling </a>
+    <a href="#figure">Figure <br> Skating</a>
+    <a href="#free">Freestyle <br> Skiing</a>
+    <a href="#ice">Ice <br> Hockey</a>
+    <a href="#luge">Luge</a>
+    <a href="#nordic">Nordic <br>Combined</a>
+    <a href="#short">Short Track <br> Speed Skating</a>
+    <a href="#skeleton">Skeleton</a>
+    <a href="#jump">Ski <br> Jumping</a>
+    <a href="#snowboard">Snowboard</a>
+    <a href="#speed">Speed <br> Skating</a>
+  </div>
+  <div class="content">
+    <div id='alpine'>
+      <h3>Alpine Skiing</h3>
+      <img src="images/alpine.jpg" alt="alpine skiing" id = "photos">
+      <p>Alpine skiing has been contested at every Winter Olympics since 1936 in Germany. This competition consists of a super-G course with downhill gates that is between 400-650
+        meters for men and 400-600 meters for women. The skiers have specific requirements for ski length and gear. 
+      </p>
+    </div>
+    <div id='biathlon'>
+      <h3>Biathlon</h3>
+      <img src="images/biathlon.jpg" alt="biathlon" id = "photos">
+      <p>Biathlon combines the power and aggression of cross-country skiing with rifle shooting. The event consists of multple feats including sprint, pursuit,
+        individual, mass start and relay. This is an exciting and complex event that is considered one of the 
+        most challenging sports. 
+      </p>
+    </div>
+    <div id='bobsleigh'>
+      <h3>Bobsleigh</h3>
+      <img src="images/bobsleigh.jpg" alt="bobsleigh" id = "photos">
+      <p> Bobsleigh is a sport invented by the Swiss in the late 1860s in which teams make timed runs down a narrow and twisting course. Some specific rules of the contest 
+        include a track length of 1200-1300 metres in length, a track to accomodate vehicles so that speeds of 80-100mph can be attained in the first 
+        250 metres and specific safety requirements.
+      </p>
+    </div>
+    <div id='cross'>
+      <h3>Cross Country Skiing</h3>
+      <img src="images/cross.jpg" alt="cross country skiing" id = "photos">
+      <p> Cross country skiing is the oldest type of skiing revolving around the activity of covering lots of flat terrain. This event was 
+        introduced into the Winter Games in 1924 and requires that each skier skiing a full six laps around the sprint course where the first team to cross the finish line wins.
+      </p>
+    </div>
+    <div id='curling'>
+      <h3>Curling</h3>
+      <img src="images/curling.jpg" alt="curling" id = "photos">
+      <p>Curling was included in the inaugural Winter Olympic Games in 1924. Athletes use a curling stone made of granite weighing between 38 and 44 pounds with the goal of 
+        placing your stone as close to the center button of the hosue as possble. Players vigorously sweep the ice in front of the stone to keep it moving. 
+      </p>
+    </div>
+    <div id='figure'>
+      <h3>Figure Skating</h3>
+      <img src="images/figure.jpg" alt="figure" id = "photos">
+      <p>Figure skating was first contested in the Olympic Games in 1908 and since then the event has consisted of singles and doubles
+        competitions for both men and women. This sport combines ice skating with dancing and gymnastics to create a beautiful and difficult routine.
+      </p>
+    </div>
+    <div id='free'>
+      <h3>Freestyle Skiing</h3>
+      <img src="images/free.jpg" alt="freestyle" id = "photos">
+      <p>Freestyle skiing combines speed, showmanship and the ability to perform aerial tricks while skiing. It made its debut in 1992 in France. The 
+        athletes must use a general slope, obey all signs and instructions, control their speed and direction and wear protective gear.
+      </p>
+    </div>
+    <div id='ice'>
+      <h3>Ice Hockey</h3>
+      <img src="images/ice.jpg" alt="ice hockey" id = "photos">
+      <p>Ice hockey tournaments have been included in the Games since 1920 as a mens sport while women's competitions began in 1998. Twelve teams compete in the men's 
+        tournament while eight teams compete in the women's tournament. The competition is played in elimination style in a playoff system.  
+      </p>
+    </div>
+    <div id='luge'>
+      <h3>Luge</h3>
+      <img src="images/luge.jpg" alt="luge" id = "photos">
+      <p>Luge made its debut in 1964 and takes place on the same track as bobsleigh. This is a men's and women's event where athletes must follow specific 
+        weight limits. The sport invovles athletes riding sleds down an icy track with steep banks and inclines and the fastest athletes to complete the track is the winner.
+      </p>
+    </div>
+    <div id='nordic'>
+      <h3>Nordic Combined</h3>
+      <img src="images/nordiccom.jpg" alt="nordic combined" id = "photos">
+      <p>Nordic combined is an event that consists of cross-country skiing and ski jumping. This has been contested since 1924 and the sport 
+        originated in Norway. The winner is the best overall athlete as a result of both events.
+      </p>
+    </div>
+    <div id='short'>
+      <h3>Short Track Speed Skating</h3>
+      <img src="images/short.png" alt="short track speed skating" id = "photos">
+      <p>Short track speed skating has been contested at the Games since 1992. This event invovles skaters racing around a 111.12 meter oval track 
+        as fast as they can. There is no set rule to how many laps must be completed by each skater except for the fact that the minimum laps must be two. 
+      </p>
+    </div>
+    <div id='skeleton'>
+      <h3>Skeleton</h3>
+      <img src="images/skeleton.png" alt="skeleton" id = "photos">
+      <p>Skeleton is considered a sliding sport where racers plummet head-first down a steep ice track on a sled. This sport was first competed at the 
+        1928 Games but was discountinued for some time before it was reintroduced in 2002. Today, both men's and women's events are held.
+      </p>
+    </div>
+    <div id='jump'>
+      <h3>Ski Jumping</h3>
+      <img src="images/jump.jpg" alt="ski jumping" id = "photos">
+      <p>Ski jumping involves athletes aiming to achieve the longest jump after descending from a specifically designed ramp. Jump length and competitor's 
+        style affect the score they receive. This sport has been a part of the Games since 1924.
+      </p>
+    </div>
+    <div id='snowboard'>
+      <h3>Snowboard</h3>
+      <img src="images/snowboard.jpg" alt="snowboard" id = "photos">
+      <p>Snowboarding made its debut in 1998 where 11 total events were inlcuded. These events consist of men's and women's halfpipe, giant slalom,
+        slopestyle, big air and team snowboard cross that also includes a mixed team.
+      </p>
+    </div>
+    <div id='speed'>
+      <h3>Speed Skating</h3>
+      <img src="images/speed.jpg" alt="speed skating" id = "photos">
+      <p>Speed skating first appeared in the Games in 1924 where men initially were only allowed to competed. Since then, it has been contested at every winter games where women's 
+        competitions were introduced in 1960. Some rules are that skaters must changes lanes each lap, false starts are disqualifying and two skaters are allowed to run at a time.
+      </p>
+    </div>
+  <footer>
+    <p>Olympic Games<br/>
+      AN INTERNATIONAL COMPETITION OF THE WORLDS MOST ELITE ATHLETES.</p>
+  </footer>
+  </body>
+  </html>
