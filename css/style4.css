@@ -99,7 +99,7 @@ footer{
   position: relative;
   bottom: 0;
 }
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 768px){
   #navbar {
     list-style-type: none;
     margin: 0;
@@ -118,7 +118,7 @@ footer{
       padding:1px 16px;
       height:1000px;
   }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1024px){
   #navbar {
     list-style-type: none;
     margin: 0;
