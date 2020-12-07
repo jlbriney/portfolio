@@ -23,25 +23,9 @@
   <h2>The Summer Olympics</h2>
   <p> With 48 unique competitions, the Summer Olympics consists of athletic feats 
     held in the water and on land.
-  </p>
-  <div style="text-align:center"> 
-    <button onclick="playPause()">Play/Pause</button> 
-    <br><br>
-    <video id="video1" width="420">
-      <source src="https://www.youtube.com/embed/Rm7BgExxo8w">
-    </video>
-  </div> 
+  </p> 
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <script> 
-    var myVideo = document.getElementById("video1"); 
-    
-    function playPause() { 
-      if (myVideo.paused) 
-        myVideo.play(); 
-      else 
-        myVideo.pause(); 
-    }  
-
     var mybutton = document.getElementById("myBtn");
 
     window.onscroll = function() {scrollFunction()};
