@@ -23,23 +23,8 @@
   <h2>The Winter Olympics</h2>
   <p> With 16 unique competitions, the Winter Olympics consist of athletic feats taking advantage of the winter weather.
   </p>
-  <div style="text-align:center"> 
-    <button onclick="playPause()">Play/Pause</button> 
-    <br><br>
-    <video id="video1" width="420">
-      <source src="winter.mp4" type="video/mp4">
-    </video>
-  </div> 
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <script> 
-    var myVideo = document.getElementById("video1"); 
-    
-    function playPause() { 
-      if (myVideo.paused) 
-        myVideo.play(); 
-      else 
-        myVideo.pause(); 
-    }  
     var mybutton = document.getElementById("myBtn");
 
     window.onscroll = function() {scrollFunction()};
